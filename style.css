@@ -255,4 +255,99 @@ header {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5); /* Stronger shadow for contrast */
 }
 
+.tools {
+    padding: 60px 80px;
+    background: linear-gradient(to right, #e0f7fa, #a7e0eb); /* Gradient background */
+    text-align: center;
+    position: relative;
+}
+
+.tools h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-family: 'The Seasons', serif;
+    color: #333333; /* Dark gray for headings */
+    position: relative;
+}
+
+.tools h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 2px;
+    background: #333333; /* Line under the heading */
+    margin: 10px auto;
+}
+
+.tools-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 140px; /* Increased gap between items */
+    margin-bottom: 20px;
+}
+
+.tool-item {
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center-align the text under the image */
+}
+
+.tool-item img {
+    width: 150px; /* Increased size for better visibility */
+    height: auto;
+    margin-bottom: 15px; /* Slightly more space between image and text */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Default shadow */
+    border-radius: 8px; /* Rounded corners */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.tool-item img:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+}
+
+.tool-item p {
+    font-size: 1.2rem;
+    color: #333333;
+    font-family: 'Arial', sans-serif;
+    margin-top: 5px; /* Adjust spacing */
+}
+
+.tool-item .description {
+    font-size: 1rem;
+    color: #fff; /* White text */
+    font-family: 'Arial', sans-serif;
+    background: #333333; /* Dark background for description */
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3); /* Shadow for description */
+    position: absolute;
+    bottom: -50px; /* Position below the image */
+    opacity: 0; /* Initially hidden */
+    transform: translateY(10px); /* Slightly move down */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    pointer-events: none; /* Prevent interaction when hidden */
+}
+
+.tool-item:hover .description {
+    opacity: 1; /* Make visible on hover */
+    transform: translateY(0); /* Move back to original position */
+    pointer-events: auto; /* Allow interaction */
+}
+
+.tools-description {
+    font-size: 1.2rem;
+    color: #fff; /* White text */
+    font-family: 'The Seasons', serif;
+    background: #333333; /* Dark background */
+    padding: 15px 30px; /* Add padding for better spacing */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    text-align: center; /* Center-align the text */
+    margin-top: 70px; /* Increased margin to move it lower */
+    display: inline-block; /* Ensure it doesn't stretch across the page */
+}
+
 
