@@ -350,4 +350,123 @@ header {
     display: inline-block; /* Ensure it doesn't stretch across the page */
 }
 
+/* Manga/Manhwa Section */
+.manga {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #a8edea, #fed6e3);
+}
 
+.manga h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-family: "Georgia", serif;
+    color: #222;
+}
+
+.manga-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.manga-item {
+    max-width: 250px;
+    text-align: center;
+}
+
+.manga-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50% 50% 15% 15%; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35); /* box shadow effect */
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth hover */
+}
+
+.manga-item img:hover {
+    transform: scale(1.05); /* slight zoom on hover */
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.45); /* stronger shadow on hover */
+}
+
+.manga-item p {
+    background: #1e90ff;
+    color: white;
+    font-size: 1rem;
+    line-height: 1.4;
+    border-radius: 12px;
+    padding: 12px;
+    font-family: "Arial", sans-serif;
+}
+
+.manga-item p span {
+    font-size: 0.9rem;
+    display: block;
+    margin-top: 6px;
+    color: #f0f0f0;
+}
+
+/* Contact / Thank You Section */
+.contact {
+    position: relative;
+    background: url('RacetrackBackGround.jpeg') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 20px 0;
+    text-align: center;
+}
+
+.contact-background {
+    background: rgba(0, 0, 0, 0.5); /* dark overlay */
+    padding: 80px 20px;
+    border-radius: 10px;
+}
+
+.contact-content h2 {
+    font-size: 3rem;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.contact-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.collaborate {
+    display: inline-block;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+    transition: color 0.3s;
+}
+
+.collaborate:hover {
+    color: #00aaff;
+    border-bottom-color: #00aaff;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 50px;
+    background: #1e9fbf;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+}
+
+.info-item img {
+    width: 30px;
+    height: 30px;
+}
