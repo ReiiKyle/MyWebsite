@@ -257,7 +257,7 @@ header {
 
 .tools {
     padding: 60px 80px;
-    background: linear-gradient(to right, #e0f7fa, #a7e0eb); /* Gradient background */
+    background: linear-gradient(to right, #e9e6e3, #fde3c0); /* Gradient background */
     text-align: center;
     position: relative;
 }
@@ -354,7 +354,7 @@ header {
 .manga {
     text-align: center;
     padding: 60px 20px;
-    background: linear-gradient(135deg, #a8edea, #fed6e3);
+    background: linear-gradient(135deg, #e9e6e3, #fde3c0);
 }
 
 .manga h2 {
@@ -454,7 +454,7 @@ header {
     justify-content: center;
     gap: 60px;
     margin-top: 50px;
-    background: #1e9fbf;
+    background: sandybrown;
     padding: 20px;
     border-radius: 0 0 10px 10px;
 }
