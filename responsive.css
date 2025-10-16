@@ -2,6 +2,8 @@
 @media (max-width: 600px) {
     body {
         font-size: 1rem;
+        padding: 0;
+        margin: 0;
     }
 
     header, .navbar {
@@ -15,12 +17,19 @@
     .nav-links {
         gap: 10px;
         font-size: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links li {
+        margin-bottom: 8px;
     }
 
     .hero {
         flex-direction: column;
         padding: 30px 10px 0 10px;
         min-height: 70vh;
+        gap: 20px;
     }
 
     .hero-content {
@@ -40,11 +49,13 @@
     .hero-image {
         margin-top: 20px;
         flex: none;
+        text-align: center;
     }
 
     .hero-image img {
-        width: 160px;
-        height: 180px;
+        width: 140px;
+        height: 160px;
+        border-radius: 50%;
     }
 
     .about {
@@ -58,6 +69,15 @@
 
     .about-item {
         max-width: 100%;
+        text-align: center;
+    }
+
+    .about-item img {
+        width: 100%;
+        max-width: 220px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
     }
 
     .background {
@@ -67,11 +87,19 @@
     .background-wrapper {
         flex-direction: column;
         gap: 20px;
+        align-items: center;
+    }
+
+    .background-content {
+        width: 100%;
+        text-align: center;
     }
 
     .background-image img {
-        max-width: 100%;
+        max-width: 90vw;
         height: auto;
+        margin: 0 auto;
+        display: block;
     }
 
     .tools {
@@ -81,16 +109,28 @@
     .tools-wrapper {
         flex-direction: column;
         gap: 40px;
+        align-items: center;
     }
 
     .tool-item img {
         width: 110px;
+        margin-bottom: 10px;
+    }
+
+    .tool-item p {
+        font-size: 1.3rem;
     }
 
     .tools-description {
         font-size: 1rem;
         padding: 10px 12px;
         margin-top: 40px;
+        display: block;
+        text-align: center;
+    }
+
+    .manga {
+        padding: 30px 10px;
     }
 
     .manga-wrapper {
@@ -102,10 +142,17 @@
     .manga-item img {
         width: 140px;
         height: 140px;
+        border-radius: 50% 50% 15% 15% / 60% 60% 40% 40%;
+        object-fit: cover;
     }
 
     .manga-item {
         max-width: 90vw;
+        text-align: center;
+    }
+
+    .manga-item p {
+        font-size: 1.1rem;
     }
 
     .contact {
@@ -116,24 +163,54 @@
         padding: 30px 10px;
     }
 
+    .contact-content {
+        text-align: center;
+    }
+
     .contact-info {
         flex-direction: column;
         gap: 20px;
         padding: 10px;
         margin-top: 30px;
+        align-items: center;
     }
 
     .info-item {
         font-size: 1rem;
+        text-align: center;
+    }
+
+    .info-item img {
+        width: 32px;
+        height: 32px;
+        margin-bottom: 8px;
     }
 }
 
 /* Tablet Styles */
 @media (min-width: 601px) and (max-width: 900px) {
+    body {
+        font-size: 1.1rem;
+    }
+
+    .navbar {
+        padding: 20px 30px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    .nav-links {
+        gap: 20px;
+        font-size: 1.1rem;
+    }
+
     .hero {
         flex-direction: column;
         padding: 40px 30px 0 30px;
         min-height: 60vh;
+        gap: 30px;
     }
 
     .hero-content h1 {
@@ -141,8 +218,9 @@
     }
 
     .hero-image img {
-        width: 220px;
-        height: 260px;
+        width: 180px;
+        height: 200px;
+        border-radius: 50%;
     }
 
     .about {
@@ -154,6 +232,14 @@
         gap: 30px;
     }
 
+    .about-item img {
+        width: 100%;
+        max-width: 260px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
     .background {
         padding: 40px 30px;
     }
@@ -161,6 +247,19 @@
     .background-wrapper {
         flex-direction: column;
         gap: 30px;
+        align-items: center;
+    }
+
+    .background-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .background-image img {
+        max-width: 70vw;
+        height: auto;
+        margin: 0 auto;
+        display: block;
     }
 
     .tools {
@@ -169,25 +268,53 @@
 
     .tools-wrapper {
         gap: 60px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .tool-item img {
         width: 130px;
+        margin-bottom: 10px;
+    }
+
+    .tool-item p {
+        font-size: 1.4rem;
     }
 
     .tools-description {
         font-size: 1.1rem;
         padding: 12px 18px;
         margin-top: 50px;
+        display: block;
+        text-align: center;
+    }
+
+    .manga {
+        padding: 40px 30px;
     }
 
     .manga-wrapper {
-        gap: 30px;
+        gap: 40px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .manga-item img {
         width: 160px;
         height: 160px;
+        border-radius: 50% 50% 15% 15% / 60% 60% 40% 40%;
+        object-fit: cover;
+    }
+
+    .manga-item {
+        max-width: 40vw;
+        text-align: center;
+    }
+
+    .manga-item p {
+        font-size: 1.2rem;
     }
 
     .contact {
@@ -198,9 +325,28 @@
         padding: 40px 20px;
     }
 
+    .contact-content {
+        text-align: center;
+    }
+
     .contact-info {
         gap: 30px;
         padding: 15px;
         margin-top: 40px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-item {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .info-item img {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 8px;
     }
 }
