@@ -4,6 +4,7 @@
         font-size: 1rem;
         padding: 0;
         margin: 0;
+        background: #f7f7f7;
     }
 
     header, .navbar {
@@ -27,9 +28,10 @@
 
     .hero {
         flex-direction: column;
-        padding: 30px 10px 0 10px;
-        min-height: 70vh;
-        gap: 20px;
+        padding: 24px 8px 0 8px;
+        min-height: 60vh;
+        gap: 16px;
+        background: #e0f7fa;
     }
 
     .hero-content {
@@ -38,55 +40,71 @@
     }
 
     .hero-content h1 {
-        font-size: 2.2rem;
+        font-size: 2rem;
+        margin-bottom: 12px;
     }
 
     .hero-content .role {
-        font-size: 1.1rem;
+        font-size: 1rem;
         padding: 6px 12px;
+        margin-bottom: 10px;
     }
 
     .hero-image {
-        margin-top: 20px;
+        margin-top: 16px;
         flex: none;
         text-align: center;
     }
 
     .hero-image img {
-        width: 140px;
-        height: 160px;
+        width: 120px;
+        height: 120px;
         border-radius: 50%;
+        object-fit: cover;
     }
 
     .about {
-        padding: 30px 10px;
+        padding: 24px 8px;
+    }
+
+    .about h2 {
+        font-size: 1.5rem;
+        margin-bottom: 16px;
     }
 
     .about-content {
         flex-direction: column;
-        gap: 20px;
+        gap: 16px;
     }
 
     .about-item {
         max-width: 100%;
         text-align: center;
+        margin-bottom: 12px;
     }
 
     .about-item img {
         width: 100%;
-        max-width: 220px;
+        max-width: 180px;
         height: auto;
-        margin: 0 auto;
+        margin: 0 auto 8px auto;
         display: block;
+        border-radius: 10px;
     }
 
     .background {
-        padding: 30px 10px;
+        padding: 24px 8px;
+        background: #e0f7fa;
+    }
+
+    .background h2 {
+        font-size: 1.5rem;
+        margin-bottom: 16px;
     }
 
     .background-wrapper {
         flex-direction: column;
-        gap: 20px;
+        gap: 16px;
         align-items: center;
     }
 
@@ -100,67 +118,82 @@
         height: auto;
         margin: 0 auto;
         display: block;
+        border-radius: 10px;
     }
 
     .tools {
-        padding: 30px 10px;
+        padding: 24px 8px;
+    }
+
+    .tools h2 {
+        font-size: 1.5rem;
+        margin-bottom: 16px;
     }
 
     .tools-wrapper {
         flex-direction: column;
-        gap: 40px;
+        gap: 32px;
         align-items: center;
     }
 
     .tool-item img {
-        width: 110px;
-        margin-bottom: 10px;
+        width: 100px;
+        margin-bottom: 8px;
     }
 
     .tool-item p {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+        margin-bottom: 4px;
     }
 
     .tools-description {
         font-size: 1rem;
         padding: 10px 12px;
-        margin-top: 40px;
+        margin-top: 32px;
         display: block;
         text-align: center;
+        border-radius: 8px;
     }
 
     .manga {
-        padding: 30px 10px;
+        padding: 24px 8px;
+    }
+
+    .manga h2 {
+        font-size: 1.5rem;
+        margin-bottom: 16px;
     }
 
     .manga-wrapper {
         flex-direction: column;
-        gap: 30px;
+        gap: 24px;
         align-items: center;
     }
 
     .manga-item img {
-        width: 140px;
-        height: 140px;
+        width: 120px;
+        height: 120px;
         border-radius: 50% 50% 15% 15% / 60% 60% 40% 40%;
         object-fit: cover;
+        margin-bottom: 8px;
     }
 
     .manga-item {
-        max-width: 90vw;
+        max-width: 95vw;
         text-align: center;
+        margin-bottom: 8px;
     }
 
     .manga-item p {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .contact {
-        padding: 40px 10px 0;
+        padding: 32px 8px 0;
     }
 
     .contact-background {
-        padding: 30px 10px;
+        padding: 24px 8px;
     }
 
     .contact-content {
@@ -169,21 +202,22 @@
 
     .contact-info {
         flex-direction: column;
-        gap: 20px;
-        padding: 10px;
-        margin-top: 30px;
+        gap: 16px;
+        padding: 8px;
+        margin-top: 24px;
         align-items: center;
     }
 
     .info-item {
         font-size: 1rem;
         text-align: center;
+        margin-bottom: 8px;
     }
 
     .info-item img {
-        width: 32px;
-        height: 32px;
-        margin-bottom: 8px;
+        width: 28px;
+        height: 28px;
+        margin-bottom: 6px;
     }
 }
 
@@ -191,10 +225,11 @@
 @media (min-width: 601px) and (max-width: 900px) {
     body {
         font-size: 1.1rem;
+        background: #f7f7f7;
     }
 
     .navbar {
-        padding: 20px 30px;
+        padding: 16px 24px;
     }
 
     .logo img {
@@ -202,51 +237,68 @@
     }
 
     .nav-links {
-        gap: 20px;
+        gap: 16px;
         font-size: 1.1rem;
+        flex-direction: row;
+        align-items: center;
     }
 
     .hero {
         flex-direction: column;
-        padding: 40px 30px 0 30px;
+        padding: 32px 24px 0 24px;
         min-height: 60vh;
-        gap: 30px;
+        gap: 24px;
+        background: #e0f7fa;
     }
 
     .hero-content h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
+        margin-bottom: 16px;
     }
 
     .hero-image img {
-        width: 180px;
-        height: 200px;
+        width: 160px;
+        height: 160px;
         border-radius: 50%;
+        object-fit: cover;
     }
 
     .about {
-        padding: 40px 30px;
+        padding: 32px 24px;
+    }
+
+    .about h2 {
+        font-size: 1.7rem;
+        margin-bottom: 20px;
     }
 
     .about-content {
         flex-direction: column;
-        gap: 30px;
+        gap: 24px;
     }
 
     .about-item img {
         width: 100%;
-        max-width: 260px;
+        max-width: 220px;
         height: auto;
-        margin: 0 auto;
+        margin: 0 auto 10px auto;
         display: block;
+        border-radius: 10px;
     }
 
     .background {
-        padding: 40px 30px;
+        padding: 32px 24px;
+        background: #e0f7fa;
+    }
+
+    .background h2 {
+        font-size: 1.7rem;
+        margin-bottom: 20px;
     }
 
     .background-wrapper {
         flex-direction: column;
-        gap: 30px;
+        gap: 24px;
         align-items: center;
     }
 
@@ -260,69 +312,86 @@
         height: auto;
         margin: 0 auto;
         display: block;
+        border-radius: 10px;
     }
 
     .tools {
-        padding: 40px 30px;
+        padding: 32px 24px;
+    }
+
+    .tools h2 {
+        font-size: 1.7rem;
+        margin-bottom: 20px;
     }
 
     .tools-wrapper {
-        gap: 60px;
+        gap: 40px;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
     }
 
     .tool-item img {
-        width: 130px;
-        margin-bottom: 10px;
+        width: 120px;
+        margin-bottom: 8px;
     }
 
     .tool-item p {
-        font-size: 1.4rem;
+        font-size: 1.3rem;
+        margin-bottom: 4px;
     }
 
     .tools-description {
         font-size: 1.1rem;
         padding: 12px 18px;
-        margin-top: 50px;
+        margin-top: 40px;
         display: block;
         text-align: center;
+        border-radius: 8px;
     }
 
     .manga {
-        padding: 40px 30px;
+        padding: 32px 24px;
+    }
+
+    .manga h2 {
+        font-size: 1.7rem;
+        margin-bottom: 20px;
     }
 
     .manga-wrapper {
-        gap: 40px;
+        gap: 32px;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
     }
 
     .manga-item img {
-        width: 160px;
-        height: 160px;
+        width: 140px;
+        height: 140px;
         border-radius: 50% 50% 15% 15% / 60% 60% 40% 40%;
         object-fit: cover;
+        margin-bottom: 8px;
     }
 
     .manga-item {
         max-width: 40vw;
         text-align: center;
+        margin-bottom: 8px;
     }
 
     .manga-item p {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .contact {
-        padding: 60px 20px 0;
+        padding: 40px 16px 0;
     }
 
     .contact-background {
-        padding: 40px 20px;
+        padding: 32px 16px;
     }
 
     .contact-content {
@@ -330,9 +399,9 @@
     }
 
     .contact-info {
-        gap: 30px;
-        padding: 15px;
-        margin-top: 40px;
+        gap: 24px;
+        padding: 12px;
+        margin-top: 32px;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
@@ -342,11 +411,12 @@
     .info-item {
         font-size: 1.1rem;
         text-align: center;
+        margin-bottom: 8px;
     }
 
     .info-item img {
-        width: 40px;
-        height: 40px;
-        margin-bottom: 8px;
+        width: 32px;
+        height: 32px;
+        margin-bottom: 6px;
     }
 }
